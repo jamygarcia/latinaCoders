@@ -1,8 +1,9 @@
 body{
 	background-color:red;
 }
-h1{
+h1{	font-family:"Lucida Grande";
 	background-color: #f90909
+
 }
 p{
 	background-color: #ff0707
