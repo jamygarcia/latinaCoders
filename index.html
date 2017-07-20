@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<title>Eligibility Quiz</title>
+	<link href = "style.css" rel = "stylesheet">
+	<link href "https://fonts.googleapis.com/css?family=Lato" ref = "stylesheet">
+	<script src="main.js"></script>
+
+
+<body>
+	<center>
+	<h2> See if you're eligible for employment opportunities!</h2>
+ 	</center>
+ 	<form id = "quiz" name = "quiz">
+
+		<p>In the job you are applying for, does it ask for security clearance?</p>
+		<input type ="radio" id= "mc" name="question1" value= "yes">yes<br>
+		<input type ="radio" id= "mc" name="question1" value= "no" >no<br> 
+
+		<p>Do you have a visa?</p>
+		<input type ="radio" id= "mc" name="question2" value= "yes">yes<br>
+		<input type ="radio" id= "mc" name="question2" value= "no" >no<br> 
+
+		<p>What Visa do you have?</p>
+		<input id ="textbox" type ="text" name="question3">
+		<br>
+		<p>Do you you have degree or any background in education?</p>
+		<input id ="textbox" type ="text" name="question3">
+		<br>
+
+		<br>
+		<input id = "button" type = "button" value = "Thank you for submiting your answers." onclick = "check();">
+	</form>
+	
+
+	</html>
+</body>
+</head>
+</html>

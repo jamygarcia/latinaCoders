@@ -1,10 +1,6 @@
 body{
-	background-color:red;
+	font-family:'Lato', sans-serif;
 }
-h1{	font-family:"Lucida Grande";
-	background-color: #f90909
-
-}
-p{
-	background-color: #ff0707
-}
+#after_submit{
+		visibility:hidden;
+	}
