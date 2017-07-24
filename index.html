@@ -1,37 +1,134 @@
 <DOCTYPE html>
 <html>
 
-<head>
-	<title>Eligibility Quiz</title>
-	<link href = "style.css" rel = "stylesheet">
-	<link href "https://fonts.googleapis.com/css?family=Lato" ref = "stylesheet">
-	<script src="main.js"></script>
 
 
 <body>
 	<center>
 	<h2> See if you're eligible for employment opportunities!</h2>
  	</center>
- 	<form id = "quiz" name = "quiz">
+ 	<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eligibility Quiz</title>
+<script type="text/javascript">
 
-		<p>In the job you are applying for, does it ask for security clearance?</p>
-		<input type ="radio" id= "mc" name="question1" value= "yes">yes<br>
-		<input type ="radio" id= "mc" name="question1" value= "no" >no<br> 
+////////////////////////////////////////////////////////
+function gradeTest() {
+	//variables with global implications
+	var totalQuestions = 5;
+	var correctAnswers = 0;
+	var alertText;
+	var i;
+	
+	
+	var a1 document.getElementsByName('q1');
+	for(i = 0; i < a1.length; i++) {
+		if(a1[i].checked) {
+			if(a1[i].value == 'true') {
+				correctAnswers++;
+				break;
+			}
+		}
+	}
+	
+	var a2 = document.getElementsByName('q2');
+	for(i = 0; i < a2.length; i++) {
+		if(a2[i].checked) {
+			if(a2[i].value == 'true') {
+				correctAnswers++;
+				break;
+			}
+		}
+	}
+	var a3 = document.getElementsByName('q3');
+	for(i = 0; i < a2.length; i++) {
+		if(a3[i].checked) {
+			if(a3[i].value == 'true') {
+				correctAnswers++;
+				break;
+			}
+		}
+	}
 
-		<p>Do you have a visa?</p>
-		<input type ="radio" id= "mc" name="question2" value= "yes">yes<br>
-		<input type ="radio" id= "mc" name="question2" value= "no" >no<br> 
+	var a4 = document.getElementsByName('q4');
+	for(i = 0; i < a2.length; i++) {
+		if(a4[i].checked) {
+			if(a4[i].value == 'true') {
+				correctAnswers++;
+				break;
+			}
+		}
+	}
+	
+	var a5 = document.getElementsByName('q5');
+	for(i = 0; i < a2.length; i++) {
+		if(a5[i].checked) {
+			if(a5[i].value == 'true') {
+				correctAnswers++;
+				break;
+			}
+		}
+	}
 
-		<p>What Visa do you have?</p>
-		<input id ="textbox" type ="text" name="question3">
-		<br>
-		<p>Do you you have degree or any background in education?</p>
-		<input id ="textbox" type ="text" name="question3">
-		<br>
+</script>
+<link href="../demo.css" rel="stylesheet" type="text/css" />
+</head>
 
-		<br>
-		<input id = "button" type = "button" value = "Thank you for submiting your answers." onclick = "check();">
-	</form>
+
+
+<body>
+<h1>Check to see if you're eligible for employment! </h1>
+<form id="test">
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <td>I have a visa.</td>
+      <td><input name="q1"type="radio" value="true" />
+        True | 
+        <input name="q1" type="radio" value="false" />
+        False</td>
+    </tr>
+    <tr>
+      <td>The job I am applying for asks' for security clearance.
+      <td><input name="q2" type="radio" value="true" />
+        True | 
+        <input name="q2" type="radio" value="false" />
+        False</td>
+    </tr>
+
+    <tr>
+      <td>I have a degree.
+      <td><input name="q3"type="radio" value="true" />
+        True | 
+        <input name="q3" type="radio" value="false" />
+        False</td>
+    </tr>
+    <tr>
+
+    <tr>
+      <td>I would like to apply for a visa.
+      <td><input name="q4" type="radio" value="true" />
+        True | 
+        <input name="q4" type="radio" value="false" />
+        False</td>
+    </tr>
+
+    <tr>
+      <td>I am a permanent resident.
+      <td><input name="q5" type="radio" value="true" />
+        True | 
+        <input name="q5" type="radio" value="false" />
+        False</td>
+    </tr>
+    
+       
+  
+  </table>
+  <br>
+  <input name="submit" type="button" onClick="gradeTest()" value="Refer to tables below depending on your answers">
+</form>
+  
+</body>
 		
 	<head>
 	<style>
