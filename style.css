@@ -1,12 +1,12 @@
 body{
-	background-color:red;
+	font-family:'Lato', sans-serif;
 }
 h1{	
-	background-color: #f90909
+	background-color: #f90909;
 
 }
 p{
-	background-color: #ff0707
+	background-color: #ff0707;
 }
 .group.button {
 	background-color: #171591;
@@ -26,3 +26,6 @@ p{
 .group.button:hover {
     background-color: #3e8e41;
 }
+#after_submit{
+		visibility:hidden;
+	}
