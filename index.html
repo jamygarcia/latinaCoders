@@ -1,30 +1,53 @@
 <DOCTYPE html>
 <html>
+<style>
 
+							ul {
+							    list-style-type: none;
+							    margin: 0;
+							    padding: 0;
+							    overflow: hidden;
+							    background-color: white;
+							}
 
-	<div class = "group">
+							li {
+							    float: left;
+							}
 
-					<a href = "home.html">
-						<button class ="button">Home</button>
-					</a>
+							li a {
+							    display: block;
+							    color: black;
+							    text-align: center;
+							    padding: 14px 16px;
+							    text-decoration: none;
+							}
+
+							li a:hover:not(.active) {
+							    background-color: #6b81ef;
+							}
+
+							.active {
+							    background-color: #f70909;
+							}
+
+</style>
+
+	
 
 					
-					<a href ="politicalRights.html">
-						<button class ="button">Political Rights</button>
-					</a>
-
-					
-					<button class ="button">Political Stats</button>
-					<button class ="button">Resources</button>
-
-					<a href="index.html">
-					<button class ="button">Eligibility Quiz</button>
-					</a>
 
 
 <body>
 	<center>
 	<h2> See if you're eligible for employment opportunities!</h2>
+		<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="politicalRights.html">Political Rights</a></li>
+  <li><a href="">Political Stats</a></li>
+  <li><a href="resoures.html">Resources</a></li>
+  <li><a href=" index.html">Eligibility Quiz</a></li>
+  <li><a href=" aboutUs.html">About Us</a></li>
+</ul
  	</center>
  	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -32,7 +55,7 @@
 <title>Eligibility Quiz</title>
 <script type="text/javascript">
 
-////////////////////////////////////////////////////////
+
 function gradeTest() {
 	//variables with global implications
 	var totalQuestions = 5;
