@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 	<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 			<head>
 				<h1><center> About Us</center></h1>
 				
@@ -43,6 +44,8 @@
 							.active {
 							    background-color: #f70909;
 							}
+							.mySlides {display:none;}
+
 
 					</style>
 			</head>
@@ -93,6 +96,36 @@
 </td>
   </tr>
 </table>
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+ <center><img class="mySlides" src="jamy2.jpeg" style="width:50%">
+  <img class="mySlides" src="jamy3.jpeg" style="width:50%">
+  <img class="mySlides" src="jamy_soccer.jpeg" style="width:50%">
+  <img class="mySlides" src="eliana.jpg" style="width:50%">
+  <img class="mySlides" src="eliana_soccer.jpg" style="width:50%">
+  <img class="mySlides" src="nat.jpg" style="width:50%">
+  <img class="mySlides" src="group.jpeg" style="width:50%">
+
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 
 
