@@ -95,6 +95,26 @@ background: beige;
 background-image: url("citizen.jpg");
 color: white;
 }
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
 </style>
 
 <script type="text/javascript"></script>
@@ -108,6 +128,31 @@ color: white;
 <div id="header"><!-- open header div -->
 <h2>JavaScript Quiz</h2>
 </div><!-- close header div -->
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   
+	   
+	   result = variable + sub + con + ifstate;
+	   
+	document.getElementById("grade").innerHTML = result;
+	   
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+if (result == 0) {result2 = "I don't think you studied."};
+if (result == 25) {result2 = "You need to spend more time. Try again."};
+if (result == 50) {result2 = "I think you could do better. Try again."};
+if (result == 75) {result2 = "So close. Try again."};
+if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
+document.getElementById("grade2").innerHTML = result2; 
+
+</script>
+
 
 <form id="form1" action" ">
 
@@ -136,9 +181,9 @@ color: white;
 <input type="radio" name="ifstate" value="0" />Allows you to store information so it can be reused throughout the program<br />
 <input type="radio" name="ifstate" value="0" />Allows you to make a decision based on a condition.<br />
 
-<input type="submit" value"Submit">
 
-<!-- <button type="submit" value="Submit">Submit</button> -->
+
+<button type="submit" value="Submit">Submit</button>
 
 </form>
 
