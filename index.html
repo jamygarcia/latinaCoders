@@ -9,14 +9,14 @@
 
 						/*color on title*/
 						body{
-							/*background-color:red;*/
+							background-color:red;
 							}
 							h1{
 							background-color: #f90909
 							}
-							p{
+							/*p{
 							background-color: #ff0707
-							}
+							}*/
 
 							ul {
 							    list-style-type: none;
@@ -72,8 +72,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Quizes</title>
 <style>
-/*body {
-background-color: lightblue;*/
+body {
 font-family: Helvetica;
 }
 
@@ -93,7 +92,7 @@ border: 2px solid black;
 padding: 5px;
 height: 250px;
 background: beige;
-background-image: url("code.jpg");
+background-image: url("citizen.jpg");
 color: white;
 }
 </style>
@@ -101,86 +100,52 @@ color: white;
 <script type="text/javascript"></script>
 </body</script>
 <link href="../style.css" rel="stylesheet" type="text/css" />
-
-
-
+<head>
+<title>JavaScript Quiz</title>
+</head>
 <body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+<h2>JavaScript Quiz</h2>
+</div><!-- close header div -->
+
+<form id="form1" action" ">
+
+<h2>Which is the best description of a variable?</h2>
+
+<input type="radio" name="variable" value="0" />Identifies a portion of a string.<br />
+<input type="radio" name="variable" value="0" />A method to join strings.<br />
+<input type="radio" name="variable" value="25" />Allows you to store information so it can be reused throughout the program.<br />
+<input type="radio" name="variable" value="0" />Allows you to make a decision based on a condition.<br />
+
+<h2>Which is the best description of the substring method?</h2>
+<input type="radio" name="sub" value="25" />Identifies a portion of a string.<br />
+<input type="radio" name="sub" value="0" />A method to join strings.<br />
+<input type="radio" name="sub" value="0" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="sub" value="0" />Allows you to make a decision based on a condition.<br />
+
+<h2>Which is the best description of concatenation?</h2>
+<input type="radio" name="con" value="25" />Identifies a portion of a string.<br />
+<input type="radio" name="con" value="0" />A method to join strings.<br />
+<input type="radio" name="con" value="0" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="con" value="0" />Allows you to make a decision based on a condition.<br />
+
+<h2>Which is the best description of an if statement?</h2>
+<input type="radio" name="ifstate" value="25" />Identifies a portion of a string.<br />
+<input type="radio" name="ifstate" value="0" />A method to join strings.<br />
+<input type="radio" name="ifstate" value="0" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="ifstate" value="0" />Allows you to make a decision based on a condition.<br />
+
+<input type="submit" value"Submit">
+
+<!-- <button type="submit" value="Submit">Submit</button> -->
+
+</form>
 
 
-<h1>Citizenship Quiz</h1>
-<p>Which is the best description of a variable?</p>
-<p1>Which is the best description of the substring method?</p1>
-<p3>Which is the best description of concatenation?</p3>
-<p4>Which is the best description of an if statement?</p4>
-
-<p5>Your grade is: <span id="grade">__</span></p5>
+<p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
 </div><!-- close main div -->
-</body>
-<h3>Take your citizenship quiz! </h3>
-<form id="test">
-
-    <table border="1" cellpadding="5" cellspacing="0">
-    <p2><font size="3">What month do we vote for President?</font></p2>
-    <tr>
-	<td><input name="q1"type="radio" value="a1" />November</td>
-	<td><input name="q1"type="radio" value="a1" />December</td>
-    </tr>
-    <tr>
-    <td><input name="q1"type="radio" value="a1" />January</td>
-    <td><input name="q1"type="radio" value="a1" />October</td>
-    </tr>
-	</table>
-   
-	
-	<table border="1" cellpadding="5" cellspacing="0">
-	<p2><font size="3">What deos the Constitution do?</font></p2>
-    <tr>
-	<td><input name="q2" type="radio" value="a2" /></td>
-	<td><input name="q2" type="radio" value="a2" /></td>
-  	</tr>
-    <tr>
-    <td><input name="q1"type="radio" value="a2" /></td>
-	<td><input name="q1"type="radio" value="a2" /></td>
-    </tr>
-	</table>
-
-	<table border="1" cellpadding="5" cellspacing="0">
-	<p2><font size="3">What deos the Constitution do?</font></p2>
-    <tr>
-	<td><input name="q2" type="radio" value="a2" /></td>
-	<td><input name="q2" type="radio" value="a2" /></td>
-  	</tr>
-    <tr>
-    <td><input name="q1"type="radio" value="a2" /></td>
-	<td><input name="q1"type="radio" value="a2" /></td>
-    </tr>
-	</table>
-
-	<table border="1" cellpadding="5" cellspacing="0">
-	<p2><font size="3">What deos the Constitution do?</font></p2>
-    <tr>
-	<td><input name="q2" type="radio" value="a2" /></td>
-	<td><input name="q2" type="radio" value="a2" /></td>
-  	</tr>
-    <tr>
-    <td><input name="q1"type="radio" value="a2" /></td>
-	<td><input name="q1"type="radio" value="a2" /></td>
-    </tr>
-	</table>
-
-	<table border="1" cellpadding="5" cellspacing="0">
-	<p2><font size="3">What deos the Constitution do?</font></p2>
-    <tr>
-	<td><input name="q2" type="radio" value="a2" /></td>
-	<td><input name="q2" type="radio" value="a2" /></td>
-  	</tr>
-    <tr>
-    <td><input name="q1"type="radio" value="a2" /></td>
-	<td><input name="q1"type="radio" value="a2" /></td>
-    </tr>
-	</table>
-
 
       
  </body>
