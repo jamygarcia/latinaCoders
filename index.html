@@ -711,10 +711,10 @@
 <input type="radio" name="donald" value="1" />Jerry Brown<br />
 
 <h2>97. Who is the father of the constitution?</h2>
-<input type="radio" name="sub" value="0" />Thomas Jefferson<br />
-<input type="radio" name="sub" value="0" />George Washington<br />
-<input type="radio" name="sub" value="1" />James Madison<br />
-<input type="radio" name="sub" value="0" />Barack Obama<br />
+<input type="radio" name="mup" value="0" />Thomas Jefferson<br />
+<input type="radio" name="mup" value="0" />George Washington<br />
+<input type="radio" name="mup" value="1" />James Madison<br />
+<input type="radio" name="mup" value="0" />Barack Obama<br />
 
 <h2>98. How many house of Reps are in Cali?</h2>
 <input type="radio" name="reps" value="0" />234<br />
@@ -752,26 +752,687 @@ document.getElementById("form1").onsubmit=function() {
        }
        }
 
-	subvar = document.getElementsByName("sub");
-	   	for(i=0; i<subvar.length; i++){
-       	if(subvar[i].checked){
-       	sscore = parseInt(subvar[i].value);
+	HoRvar = document.getElementsByName("HoR");
+	   	for(i=0; i<HoRvar.length; i++){
+       	if(HoRvar[i].checked){
+       	HoRscore = parseInt(HoRvar[i].value);
        }
        }
 
-	convar = document.getElementsByName("con");
+	branchvar = document.getElementsByName("branch");
+	   	for(i=0; i<branchvar.length; i++){
+       	if(branchvar[i].checked){
+       	brscore = parseInt(branchvar[i].value);
+       }
+       }
+
+	ogstatesvar = document.getElementsByName("ogstates");
+	   	for(i=0; i<ogstatesvar.length; i++){
+       	if(ogstatesvar[i].checked){
+       	ogstatesscore = parseInt(ogstatesvar[i].value);
+       }
+   	   }
+
+   	convar = document.getElementsByName("con");
 	   	for(i=0; i<convar.length; i++){
        	if(convar[i].checked){
        	cscore = parseInt(convar[i].value);
        }
+       }	
+
+    pwrvar = document.getElementsByName("pwr");
+    	for(i=0; i<pwrvar.length; i++){
+		if(pwrvar[i].checked){
+		pwrscore = parseInt(pwrvar[i].value);
+       }
        }
 
-	ifvar = document.getElementsByName("ifstate");
-	   	for(i=0; i<ifvar.length; i++){
-       	if(ifvar[i].checked){
-       	iscore = parseInt(ifvar[i].value);
+    ppvar = document.getElementsByName("pp");
+	   	for(i=0; i<ppvar.length; i++){
+       	if(ppvar[i].checked){
+       	ppscore = parseInt(ppvar[i].value);
        }
-    }
+       }
+
+	twoRvar = document.getElementsByName("twoR");
+	   	for(i=0; i<twoRvar.length; i++){
+       	if(twoRvar[i].checked){
+       	twoRscore = parseInt(twoRvar[i].value);
+       }
+       }
+    warvar = document.getElementsByName("war");
+    	for(i=0; i<warvar.length; i++){
+		if(warvar[i].checked){
+		warscore = parseInt(warvar[i].value);
+       }
+       }
+
+	senvar = document.getElementsByName("sen");
+	   	for(i=0; i<senvar.length; i++){
+       	if(senvar[i].checked){
+       	senscore = parseInt(senvar[i].value);
+       }
+       }
+
+	firstPvar = document.getElementsByName("firstP");
+	   	for(i=0; i<firstPvar.length; i++){
+       	if(firstPvar[i].checked){
+       	firstPscore = parseInt(firstPvar[i].value);
+       }
+       }
+
+	demovar = document.getElementsByName("demo");
+	   	for(i=0; i<demovar.length; i++){
+       	if(demovar[i].checked){
+       	demoscore = parseInt(demovar[i].value);
+       }
+       }
+    provar = document.getElementsByName("pro");
+    	for(i=0; i<provar.length; i++){
+		if(provar[i].checked){
+		proscore = parseInt(provar[i].value);
+       }
+       }
+
+	2congressvar = document.getElementsByName("2congress");
+	   	for(i=0; i<2congressvar.length; i++){
+       	if(2congressvar[i].checked){
+       	2score = parseInt(2congressvar[i].value);
+       }
+       }
+
+	ppartyvar = document.getElementsByName("pparty");
+	   	for(i=0; i<ppartyvar.length; i++){
+       	if(ppartyvar[i].checked){
+       	cppartyscore = parseInt(ppartyvar[i].value);
+       }
+       }
+
+	starsvar = document.getElementsByName("stars");
+	   	for(i=0; i<starsvar.length; i++){
+       	if(starsvar[i].checked){
+       	starsscore = parseInt(starsvar[i].value);
+       }
+       }
+    electvar = document.getElementsByName("elect");
+    	for(i=0; i<electvar.length; i++){
+		if(electvar[i].checked){
+		electscore = parseInt(electvar[i].value);
+       }
+       }
+
+	otherSvar = document.getElementsByName("otherS");
+	   	for(i=0; i<otherSvar.length; i++){
+       	if(otherSvar[i].checked){
+       	otherSscore = parseInt(otherSvar[i].value);
+       }
+       }
+
+	cabinetvar = document.getElementsByName("cabinet");
+	   	for(i=0; i<cabinetvar.length; i++){
+       	if(cabinetvar[i].checked){
+       	cabinetscore = parseInt(cabinetvar[i].value);
+       }
+       }
+
+	coldvar = document.getElementsByName("cold");
+	   	for(i=0; i<coldvar.length; i++){
+       	if(coldvar[i].checked){
+       	coldscore = parseInt(coldvar[i].value);
+       }
+       }
+    exBvar = document.getElementsByName("exB");
+    	for(i=0; i<exBvar.length; i++){
+		if(exBvar[i].checked){
+		exBscore = parseInt(exBvar[i].value);
+       }
+       }
+
+	dadvar = document.getElementsByName("dad");
+	   	for(i=0; i<dadvar.length; i++){
+       	if(dadvar[i].checked){
+       	dadscore = parseInt(dadvar[i].value);
+       }
+       }
+
+	mlkvar = document.getElementsByName("mlk");
+	   	for(i=0; i<mlkvar.length; i++){
+       	if(mlkvar[i].checked){
+       	mlkscore = parseInt(mlkvar[i].value);
+       }
+       }
+
+	westCvar = document.getElementsByName("westC");
+	   	for(i=0; i<westCvar.length; i++){
+       	if(westCvar[i].checked){
+       	westCscore = parseInt(westCvar[i].value);
+       }
+       }
+    religionvar = document.getElementsByName("religion");
+    	for(i=0; i<religionvar.length; i++){
+		if(religionvar[i].checked){
+		religionscore = parseInt(religionvar[i].value);
+       }
+       }
+
+	tervar = document.getElementsByName("ter");
+	   	for(i=0; i<tervar.length; i++){
+       	if(tervar[i].checked){
+       	terscore = parseInt(tervar[i].value);
+       }
+       }
+
+	nsvar = document.getElementsByName("ns");
+	   	for(i=0; i<nsvar.length; i++){
+       	if(nsvar[i].checked){
+       	nsscore = parseInt(nsvar[i].value);
+       }
+       }
+
+	presCvar = document.getElementsByName("presC");
+	   	for(i=0; i<presCvar.length; i++){
+       	if(presCvar[i].checked){
+       	presCscore = parseInt(presCvar[i].value);
+       }
+       }
+    cChiefvar = document.getElementsByName("cChief");
+    	for(i=0; i<cChiefvar.length; i++){
+		if(cChiefvar[i].checked){
+		cChiefscore = parseInt(cChiefvar[i].value);
+       }
+       }
+
+	911var = document.getElementsByName("911");
+	   	for(i=0; i<911var.length; i++){
+       	if(911var[i].checked){
+       	911score = parseInt(911var[i].value);
+       }
+       }
+
+	responsiblevar = document.getElementsByName("responsible");
+	   	for(i=0; i<responsiblevar.length; i++){
+       	if(responsiblevar[i].checked){
+       	responsiblescore = parseInt(responsiblevar[i].value);
+       }
+       }
+
+	firevar = document.getElementsByName("fire");
+	   	for(i=0; i<firevar.length; i++){
+       	if(firevar[i].checked){
+       	firescore = parseInt(firevar[i].value);
+       }
+       }
+    dclvar = document.getElementsByName("dcl");
+    	for(i=0; i<dclvar.length; i++){
+		if(dclvar[i].checked){
+		dclscore = parseInt(dclvar[i].value);
+       }
+       }
+
+	livedvar = document.getElementsByName("lived");
+	   	for(i=0; i<livedvar.length; i++){
+       	if(livedvar[i].checked){
+       	livedscore = parseInt(livedvar[i].value);
+       }
+       }
+
+	colonistvar = document.getElementsByName("colonist");
+	   	for(i=0; i<colonistvar.length; i++){
+       	if(colonistvar[i].checked){
+       	colonistscore = parseInt(colonistvar[i].value);
+       }
+       }
+
+	writevar = document.getElementsByName("write");
+	   	for(i=0; i<writevar.length; i++){
+       	if(writevar[i].checked){
+       	writescore = parseInt(writevar[i].value);
+       }
+       }
+    unitedvar = document.getElementsByName("united");
+    	for(i=0; i<unitedvar.length; i++){
+		if(unitedvar[i].checked){
+		unitedscore = parseInt(unitedvar[i].value);
+       }
+       }
+
+	billvar = document.getElementsByName("bill");
+	   	for(i=0; i<billvar.length; i++){
+       	if(billvar[i].checked){
+       	billscore = parseInt(billvar[i].value);
+       }
+       }
+
+	amendvar = document.getElementsByName("amend");
+	   	for(i=0; i<amendvar.length; i++){
+       	if(amendvar[i].checked){
+       	amendscore = parseInt(amendvar[i].value);
+       }
+       }
+
+	depressvar = document.getElementsByName("depress");
+	   	for(i=0; i<depressvar.length; i++){
+       	if(depressvar[i].checked){
+       	depressscore = parseInt(depressvar[i].value);
+       }
+       }
+
+    whovar = document.getElementsByName("who");
+	   	for(i=0; i<whovar.length; i++){
+       	if(whovar[i].checked){
+       	whoscore = parseInt(whovar[i].value);
+       }
+       }
+
+	generalvar = document.getElementsByName("general");
+	   	for(i=0; i<generalvar.length; i++){
+       	if(generalvar[i].checked){
+       	generalscore = parseInt(generalvar[i].value);
+       }
+       }
+
+	subvar = document.getElementsByName("sub");
+	   	for(i=0; i<subvar.length; i++){
+       	if(subvar[i].checked){
+       	subscore = parseInt(subvar[i].value);
+       }
+       }
+
+    indianvar = document.getElementsByName("indian");
+	   	for(i=0; i<indianvar.length; i++){
+       	if(indianvar[i].checked){
+       	indianscore = parseInt(indianvar[i].value);
+       }
+       }
+
+	susanvar = document.getElementsByName("susan");
+	   	for(i=0; i<susanvar.length; i++){
+       	if(susanvar[i].checked){
+       	susanscore = parseInt(susanvar[i].value);
+       }
+       }
+
+	racevar = document.getElementsByName("race");
+	   	for(i=0; i<racevar.length; i++){
+       	if(racevar[i].checked){
+       	racescore = parseInt(racevar[i].value);
+       }
+       }
+    capvar = document.getElementsByName("cap");
+	   	for(i=0; i<capvar.length; i++){
+       	if(capvar[i].checked){
+       	capscore = parseInt(capvar[i].value);
+       }
+       }
+
+	justicevar = document.getElementsByName("justice");
+	   	for(i=0; i<justicevar.length; i++){
+       	if(justicevar[i].checked){
+       	justicescore = parseInt(justicevar[i].value);
+       }
+       }
+
+	judvar = document.getElementsByName("jud");
+	   	for(i=0; i<judvar.length; i++){
+       	if(judvar[i].checked){
+       	judscore = parseInt(judvar[i].value);
+       }
+       }
+
+    rulevar = document.getElementsByName("rule");
+	   	for(i=0; i<rulevar.length; i++){
+       	if(rulevar[i].checked){
+       	rulescore = parseInt(rulevar[i].value);
+       }
+       }
+
+	benvar = document.getElementsByName("ben");
+	   	for(i=0; i<benvar.length; i++){
+       	if(benvar[i].checked){
+       	benscore = parseInt(benvar[i].value);
+       }
+       }
+
+	camevar = document.getElementsByName("came");
+	   	for(i=0; i<camevar.length; i++){
+       	if(camevar[i].checked){
+       	camescore = parseInt(camevar[i].value);
+       }
+       }
+
+    fedvar = document.getElementsByName("fed");
+	   	for(i=0; i<fedvar.length; i++){
+       	if(fedvar[i].checked){
+       	fedscore = parseInt(fedvar[i].value);
+       }
+       }
+
+	fourvar = document.getElementsByName("four");
+	   	for(i=0; i<fourvar.length; i++){
+       	if(fourvar[i].checked){
+       	fourscore = parseInt(fourvar[i].value);
+       }
+       }
+
+	thanksvar = document.getElementsByName("thanks");
+	   	for(i=0; i<thanksvar.length; i++){
+       	if(thanksvar[i].checked){
+       	thanksscore = parseInt(thanksvar[i].value);
+       }
+       }
+
+    civilvar = document.getElementsByName("civil");
+	   	for(i=0; i<civilvar.length; i++){
+       	if(civilvar[i].checked){
+       	civilscore = parseInt(civilvar[i].value);
+       }
+       }
+
+	2rightvar = document.getElementsByName("2right");
+	   	for(i=0; i<2rightvar.length; i++){
+       	if(2rightvar[i].checked){
+       	2rightscore = parseInt(2rightvar[i].value);
+       }
+       }
+
+	capitalistvar = document.getElementsByName("capitalist");
+	   	for(i=0; i<capitalistvar.length; i++){
+       	if(capitalistvar[i].checked){
+       	capitalistscore = parseInt(capitalistvar[i].value);
+       }
+       }
+
+    menvar = document.getElementsByName("men");
+	   	for(i=0; i<menvar.length; i++){
+       	if(menvar[i].checked){
+       	menscore = parseInt(menvar[i].value);
+       }
+       }
+    supremevar = document.getElementsByName("supreme");
+	   	for(i=0; i<supremevar.length; i++){
+       	if(supremevar[i].checked){
+       	supremescore = parseInt(supremevar[i].value);
+       }
+       }
+    Mainevar = document.getElementsByName("Maine");
+	   	for(i=0; i<Mainevar.length; i++){
+       	if(Mainevar[i].checked){
+       	Mainescore = parseInt(Mainevar[i].value);
+       }
+       }
+
+    Jamesvar = document.getElementsByName("James");
+	   	for(i=0; i<Jamesvar.length; i++){
+       	if(Jamesvar[i].checked){
+       	Jamesscore = parseInt(Jamesvar[i].value);
+       }
+       }
+
+    novar = document.getElementsByName("no");
+	   	for(i=0; i<novar.length; i++){
+       	if(novar[i].checked){
+       	noscore = parseInt(novar[i].value);
+       }
+       }
+
+    ifstatevar = document.getElementsByName("ifstate");
+	   	for(i=0; i<ifstatevar.length; i++){
+       	if(ifstatevar[i].checked){
+       	ifstatescore = parseInt(ifstatevar[i].value);
+       }
+       }
+
+    missvar = document.getElementsByName("miss");
+	   	for(i=0; i<missvar.length; i++){
+       	if(missvar[i].checked){
+       	missscore = parseInt(missvar[i].value);
+       }
+       }
+
+    Louisianavar = document.getElementsByName("Louisiana");
+	   	for(i=0; i<Louisianavar.length; i++){
+       	if(Louisianavar[i].checked){
+       	Louisianascore = parseInt(Louisianavar[i].value);
+       }
+       }
+
+    changevar = document.getElementsByName("change");
+	   	for(i=0; i<changevar.length; i++){
+       	if(changevar[i].checked){
+       	changescore = parseInt(changevar[i].value);
+       }
+       }
+
+    presvar = document.getElementsByName("pres");
+	   	for(i=0; i<presvar.length; i++){
+       	if(presvar[i].checked){
+       	presscore = parseInt(presvar[i].value);
+       }
+       }
+
+    manyvar = document.getElementsByName("many");
+	   	for(i=0; i<manyvar.length; i++){
+       	if(manyvar[i].checked){
+       	manyscore = parseInt(manyvar[i].value);
+       }
+       }   
+
+    mexvar = document.getElementsByName("mex");
+	   	for(i=0; i<mexvar.length; i++){
+       	if(mexvar[i].checked){
+       	mexscore = parseInt(mexvar[i].value);
+       }
+       }   
+
+    Africansvar = document.getElementsByName("Africans");
+	   	for(i=0; i<Africansvar.length; i++){
+       	if(Africansvar[i].checked){
+       	Africansscore = parseInt(Africansvar[i].value);
+       }
+       }
+
+    woodvar = document.getElementsByName("wood");
+	   	for(i=0; i<woodvar.length; i++){
+       	if(woodvar[i].checked){
+       	woodscore = parseInt(woodvar[i].value);
+       }
+       }
+       
+    japvar = document.getElementsByName("jap");
+	   	for(i=0; i<japvar.length; i++){
+       	if(japvar[i].checked){
+       	japscore = parseInt(japvar[i].value);
+       }
+       }
+       
+    mikevar = document.getElementsByName("mike");
+	   	for(i=0; i<mikevar.length; i++){
+       	if(mikevar[i].checked){
+       	mikescore = parseInt(mikevar[i].value);
+       }
+       }
+       
+    wwvar = document.getElementsByName("ww");
+	   	for(i=0; i<wwvar.length; i++){
+       	if(wwvar[i].checked){
+       	wwscore = parseInt(wwvar[i].value);
+       }
+       }
+       
+    loyaltyvar = document.getElementsByName("loyalty");
+	   	for(i=0; i<loyaltyvar.length; i++){
+       	if(loyaltyvar[i].checked){
+       	loyaltyscore = parseInt(loyaltyvar[i].value);
+       }
+       }
+       
+    tomvar = document.getElementsByName("tom");
+	   	for(i=0; i<tomvar.length; i++){
+       	if(tomvar[i].checked){
+       	tomscore = parseInt(tomvar[i].value);
+       }
+       }
+     
+    yrsvar = document.getElementsByName("yrs");
+	   	for(i=0; i<yrsvar.length; i++){
+       	if(yrsvar[i].checked){
+       	yrsscore = parseInt(yrsvar[i].value);
+       }
+       }
+
+    adoptvar = document.getElementsByName("adopt");
+	   	for(i=0; i<adoptvar.length; i++){
+       	if(adoptvar[i].checked){
+       	adoptscore = parseInt(adoptvar[i].value);
+       }
+       }
+       
+    oldervar = document.getElementsByName("older");
+	   	for(i=0; i<oldervar.length; i++){
+       	if(oldervar[i].checked){
+       	olderscore = parseInt(oldervar[i].value);
+       }
+       }
+       
+    afrvar = document.getElementsByName("afr");
+	   	for(i=0; i<afrvar.length; i++){
+       	if(afrvar[i].checked){
+       	afrscore = parseInt(afrvar[i].value);
+       }
+       }
+       
+    calvar = document.getElementsByName("cal");
+	   	for(i=0; i<calvar.length; i++){
+       	if(calvar[i].checked){
+       	calscore = parseInt(calvar[i].value);
+       }
+       }
+       
+    ninevar = document.getElementsByName("nine");
+	   	for(i=0; i<ninevar.length; i++){
+       	if(ninevar[i].checked){
+       	ninescore = parseInt(ninevar[i].value);
+       }
+       }
+       
+    supvar = document.getElementsByName("sup");
+	   	for(i=0; i<supvar.length; i++){
+       	if(supvar[i].checked){
+       	supscore = parseInt(supvar[i].value);
+       }
+       }
+       
+    natvar = document.getElementsByName("nat");
+	   	for(i=0; i<natvar.length; i++){
+       	if(natvar[i].checked){
+       	natscore = parseInt(natvar[i].value);
+       }
+       }
+       
+    statvar = document.getElementsByName("stat");
+	   	for(i=0; i<statvar.length; i++){
+       	if(statvar[i].checked){
+       	statscore = parseInt(statvar[i].value);
+       }
+       }
+       
+    allvar = document.getElementsByName("all");
+	   	for(i=0; i<allvar.length; i++){
+       	if(allvar[i].checked){
+       	allscore = parseInt(allvar[i].value);
+       }
+       }
+       
+    wevar = document.getElementsByName("we");
+	   	for(i=0; i<wevar.length; i++){
+       	if(wevar[i].checked){
+       	wescore = parseInt(wevar[i].value);
+       }
+       }
+       
+    libertyvar = document.getElementsByName("liberty");
+	   	for(i=0; i<libertyvar.length; i++){
+       	if(libertyvar[i].checked){
+       	libertyscore = parseInt(libertyvar[i].value);
+       }
+       }
+    peepsvar = document.getElementsByName("peeps");
+	   	for(i=0; i<peepsvar.length; i++){
+       	if(peepsvar[i].checked){
+       	peepsscore = parseInt(peepsvar[i].value);
+       }
+       }
+
+    endvar = document.getElementsByName("end");
+	   	for(i=0; i<endvar.length; i++){
+       	if(endvar[i].checked){
+       	endscore = parseInt(endvar[i].value);
+       }
+       }
+
+    atlanticvar = document.getElementsByName("atlantic");
+	   	for(i=0; i<atlanticvar.length; i++){
+       	if(atlanticvar[i].checked){
+       	atlanticscore = parseInt(atlanticvar[i].value);
+       }
+       }
+       
+    thirtvar = document.getElementsByName("thirt");
+	   	for(i=0; i<thirtvar.length; i++){
+       	if(thirtvar[i].checked){
+       	thirtscore = parseInt(thirtvar[i].value);
+       }
+       }
+       
+    speakervar = document.getElementsByName("speaker");
+	   	for(i=0; i<speakervar.length; i++){
+       	if(speakervar[i].checked){
+       	speakerscore = parseInt(speakervar[i].value);
+       }
+       }
+       
+    whovar = document.getElementsByName("who");
+	   	for(i=0; i<whovar.length; i++){
+       	if(whovar[i].checked){
+       	whoscore = parseInt(whovar[i].value);
+       }
+       }
+       
+    donaldvar = document.getElementsByName("donald");
+	   	for(i=0; i<donaldvar.length; i++){
+       	if(donaldvar[i].checked){
+       	donaldscore = parseInt(donaldvar[i].value);
+       }
+       }
+       
+    mupvar = document.getElementsByName("mup");
+	   	for(i=0; i<mupvar.length; i++){
+       	if(mupvar[i].checked){
+       	mupscore = parseInt(mupvar[i].value);
+       }
+       }
+       
+    repsvar = document.getElementsByName("reps");
+	   	for(i=0; i<repsvar.length; i++){
+       	if(repsvar[i].checked){
+       	repsscore = parseInt(repsvar[i].value);
+       }
+       }
+       
+    diannevar = document.getElementsByName("dianne");
+	   	for(i=0; i<diannevar.length; i++){
+       	if(diannevar[i].checked){
+       	diannescore = parseInt(diannevar[i].value);
+       }
+       }
+       
+    sacvar = document.getElementsByName("sac");
+	   	for(i=0; i<sacvar.length; i++){
+       	if(sacvar[i].checked){
+       	sacscore = parseInt(sacvar[i].value);
+       }
+       }
+}                                                                                           
 	   
 	   
 	result = vscore + sscore + cscore + iscore;
