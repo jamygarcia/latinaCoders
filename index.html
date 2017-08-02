@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 					
 <html>
+<title> Todos Unidos </title>
+<link rel = "shortcut icon" href="favicon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h6 {font-family: "Oswald"}
 
+h3{ 
+  color:#ef0b0b;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #6b81ef;
+}
+
+.active {
+    background-color: #f70909;
+}
+
+
+
+
+</style>
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Todos Unidos</b></h1>
+    <h6>Nuestra Vida <span class="w3-tag">Nuestro Futuro</span></h6>
+  </header>
+  
+
+    </div>
+  </header>
 <body>
 	<center>
 	
@@ -10,15 +66,23 @@
   <li><a href="politicalRights.html">Political Rights</a></li>
   <li><a href="politicalStats.html">Political Stats</a></li>
   <li><a href="resoures.html">Resources</a></li>
-  <li><a class="active" href=" index.html">Quizes</a></li>
+  <li><a class="active" href=" index.html">Citizenship Quiz</a></li>
   <li><a href=" aboutUs.html">About Us</a></li>
 </ul>
 </body>
+<header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="citizen.jpg" alt="Political Rights" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1  class="w3-text-white">Citizenship Quiz</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small">
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">
  	</center>
  	<html xmlns="http://www.w3.org/1999/xhtml">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Quizes</title>
+
+
+<!-- <title>Citizenship Quiz</title> -->
 <style>
 <body> {
 	font-family: Helvetica;
@@ -91,6 +155,7 @@
 
 
 </head>
+
 <body>
 <form id ="quiz" name = "quiz">
 
@@ -1154,6 +1219,29 @@ document.getElementById("number_correct").innerHTML = "You got " + correct + " c
 </script>
       
 <center> source = https://www.uscis.gov/citizenship/teachers/educational-products/100-civics-questions-and-answers-mp3-audio-english-version </center>
+
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+   <p align ="justify">Created by Latina Coders</br>
+  Contact us at: </br>
+  latinaCoders2017@gmail.com</p>
+ <p align="right"> This page contains general information</br>
+   and should not be considered as legal </br>
+   advice for an individual, case, or </br>situation.</p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
  </body>
 
 </html>
