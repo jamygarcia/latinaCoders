@@ -59,29 +59,21 @@
 	}
 
 	button {
-	width: 100px;
-	margin-top: 20px;
+	width: 300px;
+	font:;
+	margin-top: 50px;
+	}
+	#after_submit{
+		visibility:hidden;
 	}
 
 </style>
 
-<!-- <script type="text/javascript"></script>
-</body></script>
-<link href="../style.css" rel="stylesheet" type="text/css" />
-<head>
-<title>Citizenship Quiz</title> -->
+
 </head>
 <body>
-<div id="main"><!-- open main div -->
-<div id="header"><!-- open header div -->
-<h2>Citizenship Quiz</h2>
-</div><!-- close header div -->
 
-
-<form id="form1" name="quiz">
-
-<h2>1. In what month do we vote for our President?</h2>
-<input type="radio" id="mc" name="question1" value="0" />October<br />
+stion1" value="0" />October<br />
 <input type="radio" id="mc" name="question1" value="0" />January<br />
 <input type="radio" id="mc" name="question1" value="1" />November<br />
 <input type="radio" id="mc" name="question1" value="0" />February<br />
@@ -687,6 +679,8 @@
 
 <!-- <p>Your grade is: <span id="grade">__</span></p>\ -->
 <div id = "after_submit">
+
+<p id="message"></p>
 <p id="number_correct"></p>
 
 <!-- <p id="grade2"></p> -->
@@ -806,20 +800,6 @@ function check (){
 	var question98= document.quiz.question98.value;
 	var question99= document.quiz.question99.value;
 	var question100= document.quiz.question100.value;
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
 	var correct = 0;
 
 	if (question1 == "November") {
@@ -1133,13 +1113,23 @@ function check (){
 	}
 
 	
+var message = ["Great Job", "That is just okay", "You need to do better"];
+var range;
 
-
-
-	
+if(correct < 1) {
+	range = 2;
+}
+if (correct > 0 && correct <3) {
+	score > 2
+}
+if ( correct >2) {
+	score = 0;
+}
 	
 	
 document.getElementById("after_submit").style.visibility = "visible";
+
+document.getElementById("message").innerHTML = message[range];
 document.getElementById("nnumber_correct").innerHTML = "You got " + correct + " correct.";
 	
 </script>
